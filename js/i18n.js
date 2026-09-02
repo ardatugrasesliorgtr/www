@@ -1,0 +1,322 @@
+const translations = {
+  "tr": {
+    "nav_blog": "Blog",
+    "nav_projects": "Projelerim",
+    "nav_devices": "Cihazlarım",
+    "nav_donate": "Bağış",
+    "donate_title": "Bağış",
+    "donate_text": "Benim ihtiyacım yok, ama başkalarının var.",
+    "donate_close": "Kapat",
+    "empty_blog": "Şu anda blog yok",
+    "empty_blog_desc": "Her an gelebilir",
+    "hero_title": "Merhaba! Ben Arda.",
+    "hero_desc": "Açık kaynak, Linux ve mahremiyet gibi konularda içerikler üreterek dijital teknolojiyi bilinçli kullanmanız için çabalayan biriyim. Her şeyle bir nebze ilgili, bir o kadar da ilgisizim. İşte bu kadar, kendim hakkında söyleyecek başka bir şeyim yok. O kadar da ilginç biri değilim.",
+    "proj_intro": "Açık kaynak topluluğuna gönüllü olarak katkı sağladığım birkaç proje burada yer alıyor. İlgi duyarsanız iletişime geçerek siz de destek olabilirsiniz.",
+    "proj_deb_desc": "Debian web sayfalarını yerelleştiriyorum.",
+    "proj_vol_desc": "Samsung Galaxy J7 2016 (j7xelte) için Android 16 ROM'u.",
+    "proj_yt_desc": "Dijital teknoloji hakkında içerikler üretmeye çalışıyorum.",
+    "dev_intro": "Bu sayfada zamanla elimden geçen cihazlar ve onlarla yaptığım custom ROM, root, gibi denemeler hakkında bilgiler var.",
+    "dev_code_prefix": "Kod adı:",
+    "footer_code": "Web sitesinin kaynak kodu <a href='https://gitlab.com/ardatugrasesli/www' target='_blank' rel='noopener'>burada</a> mevcuttur.",
+    "footer_quran": "Biz sizi Allah rızası için doyuruyoruz; sizden ne bir karşılık ne de bir teşekkür bekliyoruz. <em>Kur'an 76:9</em>",
+    "a26x_warn": "Bu cihazda One UI 8 ön yükleyicisini (bootloader) açmanın hiçbir yolu yok; ne olur bulun.",
+    "a26x_desc": "Ayrıca resmî TWRP desteği mevcut.",
+    "gto_info": "Bu cihaz en fazla Android 16 çalıştırabilir.",
+    "gto_warn": "Lütfen orijinal yazılımın en son sürümüne sahip olduğunuzdan emin olun.",
+    "gto_desc1": "Bu tabletten en iyi şekilde yararlanmanız için ROM atın.",
+    "gto_rec_title": "TWRP ve OFRP",
+    "gto_rec_link": "TWRP ve OFRP indirme bağlantısı",
+    "gto_rom_title": "ROM'lar",
+    "gto_rom_lin": "Resmî LineageOS (Önerilir)",
+    "gto_rom_eos": "Resmî /e/OS",
+    "gto_rom_lib": "Resmî LibreMobileOS",
+    "gto_desc2": "Bu cihaz bazı Android 16 GSI'lerini de çalıştırabilir:",
+    "gto_gsi_link": "XDA'daki GSI listesi",
+    "ip8_warn": "Desteklenmiyor.",
+    "ip8_desc": "Jailbreak ile yaşatmaya çalıştım. Dopamine, checkra1n, TrollStore vs. kullandım ama pek hatırlamıyorum.",
+    "j7_info": "Cihaz en fazla Android 16 çalıştırabilir.",
+    "j7_desc": "Bu cihaz için birçok ROM var, ama en iyi çalışanlar Android 11'e kadar. Bunun üzerindekiler de çalışır, ancak hatalar olacaktır.",
+    "j7_rec_title": "Kurtarma (Recovery)",
+    "j7_rom_title": "ROM'lar",
+    "j7_rom_cr": "Resmî crDroid (Önerilir)",
+    "k53u_desc": "Pek söyleyecek bir şeyim yok, birkaç öneri yeterli:",
+    "k53u_tip1": "En az 6 GB DDR3 RAM alın.",
+    "k53u_tip2": "Mümkünse SSD alın.",
+    "k53u_tip3": "XFCE içeren bir GNU/Linux dağıtımı kullanın."
+  },
+  "en": {
+    "nav_blog": "Blog",
+    "nav_projects": "Projects",
+    "nav_devices": "Devices",
+    "nav_donate": "Donate",
+    "donate_title": "Donate",
+    "donate_text": "I don't need it, but others do.",
+    "donate_close": "Close",
+    "empty_blog": "No blog posts right now",
+    "empty_blog_desc": "There are no published articles here yet. My writings on open source, Linux, and privacy will be placed here once completed. Check back later.",
+    "hero_title": "Hello! I'm Arda.",
+    "hero_desc": "I try to help you use digital technology consciously by creating content on open source, Linux, and privacy. I am somewhat interested in everything, yet equally indifferent. That's all, I have nothing else to say about myself. I'm not that interesting.",
+    "proj_intro": "Here are a few projects I voluntarily contribute to in the open-source community. If interested, you can reach out and support them.",
+    "proj_deb_desc": "I localize Debian web pages.",
+    "proj_vol_desc": "Android 16 ROM for Samsung Galaxy J7 2016 (j7xelte).",
+    "proj_yt_desc": "I try to create content about digital technology.",
+    "dev_intro": "On this page, you'll find info about devices I've had over time and my custom ROM, root, and bootloader experiments with them.",
+    "dev_code_prefix": "Codename:",
+    "footer_code": "The website's source code is available <a href='https://gitlab.com/ardatugrasesli/www' target='_blank' rel='noopener'>here</a>.",
+    "footer_quran": "We feed you only for the countenance of Allah. We wish not from you reward or gratitude. <em>Quran 76:9</em>",
+    "a26x_warn": "There is no way to unlock the One UI 8 bootloader on this device. Please, find one.",
+    "a26x_desc": "Official TWRP support is also available.",
+    "gto_info": "This device can run up to Android 16.",
+    "gto_warn": "Please make sure you have the latest version of the original firmware.",
+    "gto_desc1": "Flash a ROM to get the most out of this tablet.",
+    "gto_rec_title": "TWRP & OFRP",
+    "gto_rec_link": "TWRP & OFRP download link",
+    "gto_rom_title": "ROMs",
+    "gto_rom_lin": "Official LineageOS (Recommended)",
+    "gto_rom_eos": "Official /e/OS",
+    "gto_rom_lib": "Official LibreMobileOS",
+    "gto_desc2": "This device can also run some Android 16 GSIs:",
+    "gto_gsi_link": "GSI list on XDA",
+    "ip8_warn": "Unsupported.",
+    "ip8_desc": "Tried to keep it alive with Jailbreak. Used Dopamine, checkra1n, TrollStore etc. but don't remember much.",
+    "j7_info": "Device can run up to Android 16.",
+    "j7_desc": "There are many ROMs for this device, but the best working ones are up to Android 11. Higher versions work too, but will have bugs.",
+    "j7_rec_title": "Recovery",
+    "j7_rom_title": "ROMs",
+    "j7_rom_cr": "Official crDroid (Recommended)",
+    "k53u_desc": "Not much to say, a few tips are enough:",
+    "k53u_tip1": "Get at least 6 GB DDR3 RAM.",
+    "k53u_tip2": "Get an SSD if possible.",
+    "k53u_tip3": "Use a GNU/Linux distribution with XFCE."
+  },
+  "ar": {
+    "nav_blog": "المدونة",
+    "nav_projects": "مشاريعي",
+    "nav_devices": "أجهزتي",
+    "nav_donate": "تبرع",
+    "donate_title": "تبرع",
+    "donate_text": "أنا لست بحاجة إليه، لكن الآخرين بحاجة.",
+    "donate_close": "إغلاق",
+    "empty_blog": "لا توجد مدونة حالياً",
+    "empty_blog_desc": "لا توجد مقالات منشورة هنا بعد. كتاباتي حول المصادر المفتوحة ولينكس والخصوصية ستوضع هنا عند اكتمالها. يرجى التحقق لاحقًا.",
+    "hero_title": "مرحباً! أنا أردا.",
+    "hero_desc": "أحاول مساعدتك في استخدام التكنولوجيا الرقمية بوعي من خلال إنشاء محتوى حول المصادر المفتوحة ولينكس والخصوصية. أنا مهتم بكل شيء قليلاً، وغير مبالٍ في نفس الوقت. هذا كل شيء، ليس لدي ما أقوله عن نفسي. لست شخصاً مثيراً للاهتمام.",
+    "proj_intro": "إليك بعض المشاريع التي أساهم فيها طوعاً في مجتمع المصادر المفتوحة. إذا كنت مهتماً، يمكنك التواصل ودعمها.",
+    "proj_deb_desc": "أقوم بتوطين صفحات ويب دبيان.",
+    "proj_vol_desc": "روم أندرويد 16 لجهاز Samsung Galaxy J7 2016 (j7xelte).",
+    "proj_yt_desc": "أحاول إنشاء محتوى حول التكنولوجيا الرقمية.",
+    "dev_intro": "ستجد في هذه الصفحة معلومات عن الأجهزة التي امتلكتها بمرور الوقت وتجاربي مع الرومات المخصصة والروت والبوت لودر.",
+    "dev_code_prefix": "الاسم الرمزي:",
+    "footer_code": "الكود المصدري للموقع متاح <a href='https://gitlab.com/ardatugrasesli/www' target='_blank' rel='noopener'>هنا</a>.",
+    "footer_quran": "إِنَّمَا نُطْعِمُكُمْ لِوَجْهِ اللَّهِ لَا نُرِيدُ مِنكُمْ جَزَاءً وَلَا شُكُورًا <em>القرآن 76:9</em>",
+    "a26x_warn": "لا توجد طريقة لفتح البوت لودر (One UI 8) في هذا الجهاز. أرجوكم، جدوا طريقة.",
+    "a26x_desc": "يوجد أيضاً دعم رسمي لـ TWRP.",
+    "gto_info": "يمكن لهذا الجهاز تشغيل أندرويد 16 كحد أقصى.",
+    "gto_warn": "يرجى التأكد من حصولك على أحدث إصدار من النظام الأصلي.",
+    "gto_desc1": "قم بتثبيت روم لتحقيق أقصى استفادة من هذا الجهاز اللوحي.",
+    "gto_rec_title": "TWRP و OFRP",
+    "gto_rec_link": "رابط تحميل TWRP و OFRP",
+    "gto_rom_title": "الرومات",
+    "gto_rom_lin": "LineageOS الرسمي (موصى به)",
+    "gto_rom_eos": "/e/OS الرسمي",
+    "gto_rom_lib": "LibreMobileOS الرسمي",
+    "gto_desc2": "يمكن لهذا الجهاز أيضاً تشغيل بعض أنظمة Android 16 GSI:",
+    "gto_gsi_link": "قائمة GSI على XDA",
+    "ip8_warn": "غير مدعوم.",
+    "ip8_desc": "حاولت إبقاءه حياً باستخدام الجيلبريك. استخدمت Dopamine و checkra1n و TrollStore وغيرها لكنني لا أتذكر الكثير.",
+    "j7_info": "يمكن للجهاز تشغيل أندرويد 16 كحد أقصى.",
+    "j7_desc": "توجد العديد من الرومات لهذا الجهاز، لكن أفضلها يعمل حتى أندرويد 11. الإصدارات الأعلى تعمل أيضاً، لكن بها أخطاء.",
+    "j7_rec_title": "الاسترداد (Recovery)",
+    "j7_rom_title": "الرومات",
+    "j7_rom_cr": "crDroid الرسمي (موصى به)",
+    "k53u_desc": "ليس لدي الكثير لأقوله، بضع نصائح تكفي:",
+    "k53u_tip1": "احصل على ذاكرة وصول عشوائي (RAM) بسعة 6 جيجابايت DDR3 على الأقل.",
+    "k53u_tip2": "احصل على SSD إن أمكن.",
+    "k53u_tip3": "استخدم توزيعة GNU/Linux مع واجهة XFCE."
+  },
+  "es": {
+    "nav_blog": "Blog",
+    "nav_projects": "Mis Proyectos",
+    "nav_devices": "Mis Dispositivos",
+    "nav_donate": "Donar",
+    "donate_title": "Donar",
+    "donate_text": "Yo no lo necesito, pero otros sí.",
+    "donate_close": "Cerrar",
+    "empty_blog": "No hay blog en este momento",
+    "empty_blog_desc": "Todavía no hay artículos publicados aquí. Mis escritos sobre código abierto, Linux y privacidad se colocarán aquí una vez completados. Vuelve más tarde.",
+    "hero_title": "¡Hola! Soy Arda.",
+    "hero_desc": "Intento ayudarte a usar la tecnología digital de manera consciente creando contenido sobre código abierto, Linux y privacidad. Me interesa un poco todo, pero soy igualmente indiferente. Eso es todo, no tengo nada más que decir sobre mí. No soy tan interesante.",
+    "proj_intro": "Aquí hay algunos proyectos en los que contribuyo voluntariamente en la comunidad de código abierto. Si estás interesado, puedes contactar y apoyar.",
+    "proj_deb_desc": "Localizo páginas web de Debian.",
+    "proj_vol_desc": "ROM de Android 16 para Samsung Galaxy J7 2016 (j7xelte).",
+    "proj_yt_desc": "Intento crear contenido sobre tecnología digital.",
+    "dev_intro": "En esta página encontrarás información sobre dispositivos que he tenido y mis experimentos con ROMs, root y bootloaders.",
+    "dev_code_prefix": "Nombre en clave:",
+    "footer_code": "El código fuente del sitio web está disponible <a href='https://gitlab.com/ardatugrasesli/www' target='_blank' rel='noopener'>aquí</a>.",
+    "footer_quran": "Os alimentamos por el rostro de Dios; no queremos de vosotros recompensa ni gratitud. <em>Corán 76:9</em>",
+    "a26x_warn": "No hay forma de desbloquear el bootloader de One UI 8 en este dispositivo. Por favor, encuentren una.",
+    "a26x_desc": "También hay soporte oficial de TWRP disponible.",
+    "gto_info": "Este dispositivo puede ejecutar hasta Android 16.",
+    "gto_warn": "Por favor, asegúrate de tener la última versión del firmware original.",
+    "gto_desc1": "Instala una ROM para aprovechar al máximo esta tablet.",
+    "gto_rec_title": "TWRP y OFRP",
+    "gto_rec_link": "Enlace de descarga de TWRP y OFRP",
+    "gto_rom_title": "ROMs",
+    "gto_rom_lin": "LineageOS Oficial (Recomendado)",
+    "gto_rom_eos": "/e/OS Oficial",
+    "gto_rom_lib": "LibreMobileOS Oficial",
+    "gto_desc2": "Este dispositivo también puede ejecutar algunas GSIs de Android 16:",
+    "gto_gsi_link": "Lista de GSI en XDA",
+    "ip8_warn": "No soportado.",
+    "ip8_desc": "Intenté mantenerlo vivo con Jailbreak. Usé Dopamine, checkra1n, TrollStore, etc., pero no recuerdo mucho.",
+    "j7_info": "El dispositivo puede ejecutar hasta Android 16.",
+    "j7_desc": "Hay muchas ROMs para este dispositivo, pero las que mejor funcionan son hasta Android 11. Las versiones superiores también funcionan, pero tendrán errores.",
+    "j7_rec_title": "Recovery",
+    "j7_rom_title": "ROMs",
+    "j7_rom_cr": "crDroid Oficial (Recomendado)",
+    "k53u_desc": "No hay mucho que decir, un par de consejos bastan:",
+    "k53u_tip1": "Consigue al menos 6 GB de RAM DDR3.",
+    "k53u_tip2": "Consigue un SSD si es posible.",
+    "k53u_tip3": "Usa una distribución GNU/Linux con XFCE."
+  },
+  "it": {
+    "nav_blog": "Blog",
+    "nav_projects": "Progetti",
+    "nav_devices": "Dispositivi",
+    "nav_donate": "Dona",
+    "donate_title": "Dona",
+    "donate_text": "Io non ne ho bisogno, ma altri sì.",
+    "donate_close": "Chiudi",
+    "empty_blog": "Nessun blog al momento",
+    "empty_blog_desc": "Non ci sono ancora articoli pubblicati qui. I miei scritti su open source, Linux e privacy verranno inseriti qui una volta completati. Torna più tardi.",
+    "hero_title": "Ciao! Sono Arda.",
+    "hero_desc": "Cerco di aiutarti a usare la tecnologia digitale in modo consapevole creando contenuti su open source, Linux e privacy. Mi interessa un po' di tutto, ma sono altrettanto indifferente. Questo è quanto, non ho altro da dire su di me. Non sono così interessante.",
+    "proj_intro": "Ecco alcuni progetti a cui contribuisco volontariamente nella comunità open source. Se sei interessato, puoi contattarci e supportare.",
+    "proj_deb_desc": "Localizzo le pagine web di Debian.",
+    "proj_vol_desc": "ROM Android 16 per Samsung Galaxy J7 2016 (j7xelte).",
+    "proj_yt_desc": "Cerco di creare contenuti sulla tecnologia digitale.",
+    "dev_intro": "In questa pagina troverai informazioni sui dispositivi che ho avuto e sui miei esperimenti con ROM personalizzate, root e bootloader.",
+    "dev_code_prefix": "Nome in codice:",
+    "footer_code": "Il codice sorgente del sito web è disponibile <a href='https://gitlab.com/ardatugrasesli/www' target='_blank' rel='noopener'>qui</a>.",
+    "footer_quran": "Vi nutriamo solo per il volto di Dio; non vogliamo da voi ricompensa né gratitudine. <em>Corano 76:9</em>",
+    "a26x_warn": "Non c'è modo di sbloccare il bootloader di One UI 8 su questo dispositivo. Vi prego, trovatene uno.",
+    "a26x_desc": "È disponibile anche il supporto ufficiale TWRP.",
+    "gto_info": "Questo dispositivo può eseguire fino ad Android 16.",
+    "gto_warn": "Assicurati di avere l'ultima versione del firmware originale.",
+    "gto_desc1": "Installa una ROM per sfruttare al meglio questo tablet.",
+    "gto_rec_title": "TWRP e OFRP",
+    "gto_rec_link": "Link di download TWRP e OFRP",
+    "gto_rom_title": "ROM",
+    "gto_rom_lin": "LineageOS Ufficiale (Consigliato)",
+    "gto_rom_eos": "/e/OS Ufficiale",
+    "gto_rom_lib": "LibreMobileOS Ufficiale",
+    "gto_desc2": "Questo dispositivo può anche eseguire alcune GSI di Android 16:",
+    "gto_gsi_link": "Elenco GSI su XDA",
+    "ip8_warn": "Non supportato.",
+    "ip8_desc": "Ho provato a tenerlo in vita con il Jailbreak. Ho usato Dopamine, checkra1n, TrollStore ecc. ma non ricordo molto.",
+    "j7_info": "Il dispositivo può eseguire fino ad Android 16.",
+    "j7_desc": "Ci sono molte ROM per questo dispositivo, ma quelle che funzionano meglio arrivano fino ad Android 11. Le versioni successive funzionano, ma avranno dei bug.",
+    "j7_rec_title": "Recovery",
+    "j7_rom_title": "ROM",
+    "j7_rom_cr": "crDroid Ufficiale (Consigliato)",
+    "k53u_desc": "Non c'è molto da dire, bastano pochi consigli:",
+    "k53u_tip1": "Procurati almeno 6 GB di RAM DDR3.",
+    "k53u_tip2": "Prendi un SSD se possibile.",
+    "k53u_tip3": "Usa una distribuzione GNU/Linux con XFCE."
+  },
+  "fr": {
+    "nav_blog": "Blog",
+    "nav_projects": "Projets",
+    "nav_devices": "Appareils",
+    "nav_donate": "Faire un don",
+    "donate_title": "Faire un don",
+    "donate_text": "Je n'en ai pas besoin, mais d'autres oui.",
+    "donate_close": "Fermer",
+    "empty_blog": "Pas de blog pour le moment",
+    "empty_blog_desc": "Il n'y a pas encore d'articles publiés ici. Mes écrits sur l'open source, Linux et la vie privée seront placés ici une fois terminés. Revenez plus tard.",
+    "hero_title": "Bonjour ! Je suis Arda.",
+    "hero_desc": "J'essaie de vous aider à utiliser la technologie numérique consciemment en créant du contenu sur l'open source, Linux et la vie privée. Je m'intéresse un peu à tout, tout en y étant indifférent. C'est tout, je n'ai rien d'autre à dire sur moi. Je ne suis pas si intéressant.",
+    "proj_intro": "Voici quelques projets auxquels je contribue bénévolement dans la communauté open source. Si cela vous intéresse, vous pouvez les soutenir.",
+    "proj_deb_desc": "Je localise les pages web de Debian.",
+    "proj_vol_desc": "ROM Android 16 pour Samsung Galaxy J7 2016 (j7xelte).",
+    "proj_yt_desc": "J'essaie de créer du contenu sur la technologie numérique.",
+    "dev_intro": "Sur cette page, vous trouverez des informations sur les appareils que j'ai eus et mes expériences (ROM personnalisées, root, bootloader).",
+    "dev_code_prefix": "Nom de code:",
+    "footer_code": "Le code source du site web est disponible <a href='https://gitlab.com/ardatugrasesli/www' target='_blank' rel='noopener'>ici</a>.",
+    "footer_quran": "C'est pour le visage d'Allah que nous vous nourrissons : nous ne voulons de vous ni récompense ni gratitude. <em>Coran 76:9</em>",
+    "a26x_warn": "Il n'y a aucun moyen de déverrouiller le bootloader One UI 8 sur cet appareil. S'il vous plaît, trouvez-en un.",
+    "a26x_desc": "Le support officiel de TWRP est également disponible.",
+    "gto_info": "Cet appareil peut exécuter jusqu'à Android 16.",
+    "gto_warn": "Veuillez vous assurer d'avoir la dernière version du firmware original.",
+    "gto_desc1": "Installez une ROM pour tirer le meilleur parti de cette tablette.",
+    "gto_rec_title": "TWRP et OFRP",
+    "gto_rec_link": "Lien de téléchargement TWRP et OFRP",
+    "gto_rom_title": "ROMs",
+    "gto_rom_lin": "LineageOS Officiel (Recommandé)",
+    "gto_rom_eos": "/e/OS Officiel",
+    "gto_rom_lib": "LibreMobileOS Officiel",
+    "gto_desc2": "Cet appareil peut également exécuter certains GSI Android 16 :",
+    "gto_gsi_link": "Liste des GSI sur XDA",
+    "ip8_warn": "Non supporté.",
+    "ip8_desc": "J'ai essayé de le maintenir en vie avec le Jailbreak. J'ai utilisé Dopamine, checkra1n, TrollStore, etc., mais je ne m'en souviens pas beaucoup.",
+    "j7_info": "L'appareil peut exécuter jusqu'à Android 16.",
+    "j7_desc": "Il existe de nombreuses ROM pour cet appareil, mais les meilleures fonctionnent jusqu'à Android 11. Les versions supérieures fonctionnent aussi, mais avec des bugs.",
+    "j7_rec_title": "Recovery",
+    "j7_rom_title": "ROMs",
+    "j7_rom_cr": "crDroid Officiel (Recommandé)",
+    "k53u_desc": "Pas grand chose à dire, quelques conseils suffisent :",
+    "k53u_tip1": "Obtenez au moins 6 Go de RAM DDR3.",
+    "k53u_tip2": "Prenez un SSD si possible.",
+    "k53u_tip3": "Utilisez une distribution GNU/Linux avec XFCE."
+  }
+};
+
+const supportedLangs = ['tr', 'en', 'ar', 'es', 'it', 'fr'];
+
+function getBrowserLang() {
+  const browserLang = navigator.language.split('-')[0];
+  if (supportedLangs.includes(browserLang)) {
+    return browserLang;
+  }
+  return 'en';
+}
+
+function setLanguage(lang) {
+  if (!supportedLangs.includes(lang)) lang = 'en';
+
+  localStorage.setItem('preferred_lang', lang);
+  document.documentElement.lang = lang;
+
+  document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (translations[lang] && translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.remove('active');
+    if(btn.getAttribute('data-lang') === lang) {
+      btn.classList.add('active');
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('preferred_lang');
+  const initialLang = savedLang ? savedLang : getBrowserLang();
+
+  setLanguage(initialLang);
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const selectedLang = btn.getAttribute('data-lang');
+      setLanguage(selectedLang);
+      if(typeof closeLang === 'function') closeLang();
+      if(typeof closeMenu === 'function') closeMenu();
+    });
+  });
+});
