@@ -1,2 +1,1 @@
-# www
-Source code of www.ardatugrasesli.org.tr
+Turkish is the reference language. Other languages ​​have been translated using artificial intelligence. Please contact us if there are errors or if your language is missing and you would like to add it.
