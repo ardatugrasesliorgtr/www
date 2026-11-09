@@ -7,3 +7,9 @@ nav: index
     <h1 data-i18n="hero_title">Merhaba! Ben Arda.</h1>
     <p data-i18n="hero_desc">Açık kaynak, Linux ve mahremiyet gibi konularda içerikler üreterek dijital teknolojiyi bilinçli kullanmanız için çabalayan biriyim. Her şeyle bir nebze ilgili, bir o kadar da ilgisizim. İşte bu kadar, kendim hakkında söyleyecek başka bir şeyim yok. O kadar da ilginç biri değilim.</p>
   </section>
+{% if site.posts.size > 0 %}
+  <section class="recent">
+    <h2 class="recent-title" data-i18n="recent_posts">Son yazılar</h2>
+{% include post-list.html limit=3 heading="h3" %}
+  </section>
+{% endif %}

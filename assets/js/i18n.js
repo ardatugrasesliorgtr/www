@@ -6,7 +6,7 @@ window.TRANSLATIONS = Object.freeze({
     "nav_devices": "Cihazlarım",
     "nav_donate": "Bağış",
     "donate_title": "Bağış",
-    "donate_text": "Benim ihtiyacım yok, ama başkalarının var.",
+    "donate_text": "Benim ihtiyacım yok ama başkalarının var.",
     "donate_close": "Kapat",
     "empty_blog": "Şu anda yazı yok",
     "empty_blog_desc": "Her an gelebilir",
@@ -54,7 +54,11 @@ window.TRANSLATIONS = Object.freeze({
     "about_contact": "İletişim",
     "about_devices": "Cihaz arşivimi incele",
     "about_posts": "Yazıları oku",
-    "lang_choose": "Dil seç"
+    "lang_choose": "Dil seç",
+    "recent_posts": "Son yazılar",
+    "k53u_note": "Taş devrinden kalma bir bilgisayar.",
+    "dev_disclaimer": "Yaptıklarınızdan siz sorumlusunuz. Cihazınız bozulursa sorumluluk kabul etmiyorum.",
+    "j7_xda": "XDA'da bu cihaz için bir sürü ROM var."
   },
   "en": {
     "nav_blog": "Articles",
@@ -110,7 +114,11 @@ window.TRANSLATIONS = Object.freeze({
     "about_contact": "Contact",
     "about_devices": "Browse my device archive",
     "about_posts": "Read the articles",
-    "lang_choose": "Choose language"
+    "lang_choose": "Choose language",
+    "recent_posts": "Recent articles",
+    "k53u_note": "A computer from the Stone Age.",
+    "dev_disclaimer": "You are responsible for what you do. I take no responsibility if your device breaks.",
+    "j7_xda": "There are lots of ROMs for this device on XDA."
   },
   "ar": {
     "nav_blog": "المقالات",
@@ -166,7 +174,11 @@ window.TRANSLATIONS = Object.freeze({
     "about_contact": "التواصل",
     "about_devices": "تصفح أرشيف أجهزتي",
     "about_posts": "اقرأ المقالات",
-    "lang_choose": "اختر اللغة"
+    "lang_choose": "اختر اللغة",
+    "recent_posts": "أحدث المقالات",
+    "k53u_note": "حاسوب من العصر الحجري.",
+    "dev_disclaimer": "أنت مسؤول عما تفعله. لا أتحمل أي مسؤولية إذا تعطل جهازك.",
+    "j7_xda": "يوجد الكثير من الرومات لهذا الجهاز على XDA."
   },
   "es": {
     "nav_blog": "Artículos",
@@ -222,7 +234,11 @@ window.TRANSLATIONS = Object.freeze({
     "about_contact": "Contacto",
     "about_devices": "Explora mi archivo de dispositivos",
     "about_posts": "Lee los artículos",
-    "lang_choose": "Elegir idioma"
+    "lang_choose": "Elegir idioma",
+    "recent_posts": "Artículos recientes",
+    "k53u_note": "Un ordenador de la Edad de Piedra.",
+    "dev_disclaimer": "Eres responsable de lo que hagas. No me hago responsable si tu dispositivo se estropea.",
+    "j7_xda": "Hay un montón de ROM para este dispositivo en XDA."
   },
   "it": {
     "nav_blog": "Articoli",
@@ -278,7 +294,11 @@ window.TRANSLATIONS = Object.freeze({
     "about_contact": "Contatti",
     "about_devices": "Sfoglia il mio archivio di dispositivi",
     "about_posts": "Leggi gli articoli",
-    "lang_choose": "Scegli la lingua"
+    "lang_choose": "Scegli la lingua",
+    "recent_posts": "Articoli recenti",
+    "k53u_note": "Un computer dell'età della pietra.",
+    "dev_disclaimer": "Sei responsabile di ciò che fai. Non mi assumo alcuna responsabilità se il tuo dispositivo si rompe.",
+    "j7_xda": "Su XDA ci sono tantissime ROM per questo dispositivo."
   },
   "fr": {
     "nav_blog": "Articles",
@@ -334,6 +354,10 @@ window.TRANSLATIONS = Object.freeze({
     "about_contact": "Contact",
     "about_devices": "Parcourir mes appareils",
     "about_posts": "Lire les articles",
-    "lang_choose": "Choisir la langue"
+    "lang_choose": "Choisir la langue",
+    "recent_posts": "Articles récents",
+    "k53u_note": "Un ordinateur de l'âge de pierre.",
+    "dev_disclaimer": "Vous êtes responsable de ce que vous faites. Je décline toute responsabilité si votre appareil est endommagé.",
+    "j7_xda": "Il existe de nombreuses ROM pour cet appareil sur XDA."
   }
 });

@@ -1,0 +1,52 @@
+name: Siteyi yayımla
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Depoyu al
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          persist-credentials: false
+
+      - name: Siteyi derle (Jekyll)
+        uses: actions/jekyll-build-pages@e4ef22193c23ea849fc3fea6dbce69da1ee65b6d # v1.0.9
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: lftp kur
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Sunucuya gönder (FTPS)
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          LFTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_REMOTE_DIR: ${{ secrets.FTP_REMOTE_DIR }}
+        run: |
+          lftp -c "
+            set ftp:ssl-force true;
+            set ftp:ssl-protect-data true;
+            set ssl:verify-certificate true;
+            set net:max-retries 2;
+            set net:timeout 30;
+            open --env-password -u \"$FTP_USERNAME\" \"$FTP_SERVER\";
+            mirror --reverse --delete --verbose \
+              --exclude-glob .well-known/ \
+              --exclude-glob cgi-bin/ \
+              _site/ \"${FTP_REMOTE_DIR:-public_html}/\"
+          "

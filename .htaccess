@@ -1,0 +1,23 @@
+# Hosting Dünyam (Apache/LiteSpeed) için güvenlik ayarları
+
+# Her isteği HTTPS'e yönlendir
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Klasör içeriğini listeleme
+Options -Indexes
+ServerSignature Off
+
+<IfModule mod_headers.c>
+  Header always set Content-Security-Policy "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests"
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "no-referrer"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  Header always unset X-Powered-By
+</IfModule>

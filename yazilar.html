@@ -6,19 +6,7 @@ nav: yazilar
 ---
   <h1 class="page-title" data-i18n="nav_blog">Yazılar</h1>
 {% if site.posts.size > 0 %}
-  <ul class="card posts">
-    {%- for post in site.posts %}
-    <li>
-      <a class="row" href="{{ post.url | remove_first: '/' }}">
-        <div class="row-text">
-          <h2 class="row-title">{{ post.title | escape }}</h2>
-          <p class="row-desc">{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}</p>
-        </div>
-        <time class="date" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%d.%m.%Y' }}</time>
-      </a>
-    </li>
-    {%- endfor %}
-  </ul>
+{% include post-list.html limit=site.posts.size %}
 {% else %}
   <section class="card empty">
     <div class="icon-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H12v16H5.5c-.8 0-1.5-.7-1.5-1.5v-13Z"/><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H12v16h6.5c.8 0 1.5-.7 1.5-1.5v-13Z"/></svg></div>

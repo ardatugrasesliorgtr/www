@@ -6,6 +6,8 @@ description: >-
 timezone: Europe/Istanbul
 markdown: kramdown
 permalink: /yazilar/:title.html
+include:
+  - .htaccess
 exclude:
   - README.md
 

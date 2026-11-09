@@ -1,0 +1,14 @@
+{%- assign h = include.heading | default: "h2" -%}
+  <ul class="card posts">
+    {%- for post in site.posts limit: include.limit %}
+    <li>
+      <a class="row" href="{{ post.url | remove_first: '/' }}">
+        <div class="row-text">
+          <{{ h }} class="row-title">{{ post.title | escape }}</{{ h }}>
+          <p class="row-desc">{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}</p>
+        </div>
+        <time class="date" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%d.%m.%Y' }}</time>
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
