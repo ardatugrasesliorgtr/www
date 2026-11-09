@@ -43,7 +43,7 @@
 
   setLang(readLang());
 
-  /* ---------- Kenar çubuğu (mobil) ---------- */
+  /* ---------- Mobil menü ---------- */
   var burger = document.getElementById('burger');
   var closeNav = document.getElementById('closeNav');
   var scrim = document.getElementById('scrim');
@@ -60,50 +60,35 @@
   closeNav.addEventListener('click', closeSidebar);
   scrim.addEventListener('click', closeSidebar);
 
-  /* ---------- Profil menüsü ---------- */
-  var accountBtn = document.getElementById('accountBtn');
-  var menu = document.getElementById('accountMenu');
-  var mainPanel = document.getElementById('menuMain');
-  var langPanel = document.getElementById('menuLang');
+  /* ---------- Dil menüsü ---------- */
+  var langBtn = document.getElementById('langBtn');
+  var langMenu = document.getElementById('langMenu');
 
-  function closeMenu() {
-    menu.hidden = true;
-    accountBtn.setAttribute('aria-expanded', 'false');
+  function closeLang() {
+    langMenu.hidden = true;
+    langBtn.setAttribute('aria-expanded', 'false');
   }
-  function openMenu() {
-    mainPanel.hidden = false;
-    langPanel.hidden = true;
-    menu.hidden = false;
-    accountBtn.setAttribute('aria-expanded', 'true');
-  }
-  accountBtn.addEventListener('click', function (e) {
+  langBtn.addEventListener('click', function (e) {
     e.stopPropagation();
-    if (menu.hidden) openMenu(); else closeMenu();
-  });
-  menu.addEventListener('click', function (e) { e.stopPropagation(); });
-
-  document.getElementById('langOpen').addEventListener('click', function () {
-    mainPanel.hidden = true;
-    langPanel.hidden = false;
-    var current = langPanel.querySelector('[aria-checked="true"]');
+    if (!langMenu.hidden) { closeLang(); return; }
+    langMenu.hidden = false;
+    langBtn.setAttribute('aria-expanded', 'true');
+    var current = langMenu.querySelector('[aria-checked="true"]');
     if (current) current.focus();
   });
-  document.getElementById('langBack').addEventListener('click', function () {
-    langPanel.hidden = true;
-    mainPanel.hidden = false;
-  });
-  langPanel.querySelectorAll('[data-lang]').forEach(function (btn) {
+  langMenu.addEventListener('click', function (e) { e.stopPropagation(); });
+  langMenu.querySelectorAll('[data-lang]').forEach(function (btn) {
     btn.addEventListener('click', function () {
       setLang(btn.getAttribute('data-lang'));
-      closeMenu();
-      accountBtn.focus();
+      closeLang();
+      langBtn.focus();
     });
   });
 
-  document.addEventListener('click', closeMenu);
+  document.addEventListener('click', closeLang);
   document.addEventListener('keydown', function (e) {
     if (e.key !== 'Escape') return;
-    if (!menu.hidden) { closeMenu(); accountBtn.focus(); }
+    if (!langMenu.hidden) { closeLang(); langBtn.focus(); }
     if (body.classList.contains('nav-open')) { closeSidebar(); burger.focus(); }
   });
 
