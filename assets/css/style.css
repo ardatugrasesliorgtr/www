@@ -340,3 +340,4 @@ dialog p { margin: 0 0 18px; color: var(--muted); }
   .skills .row { flex-direction: column; align-items: flex-start; gap: 8px; }
   .skills dt { width: auto; }
 }
+.ai-tag { margin-inline-start: 8px; color: var(--faint); font-size: 12px; white-space: nowrap; }
