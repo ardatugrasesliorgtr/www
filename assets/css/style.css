@@ -322,3 +322,21 @@ dialog p { margin: 0 0 18px; color: var(--muted); }
 .social { padding: 4px; }
 .social svg { width: 18px; height: 18px; }
 .dialog-inner .btn { display: block; margin: 0 auto; }
+
+/* ---------- Yetenekler ---------- */
+.skills-title { margin-bottom: 0; }
+.skills { margin: 10px 0 20px; }
+.skills dt { width: 170px; flex: none; color: var(--muted); font-size: 14px; }
+.skills dd { margin: 0; flex: 1; min-width: 0; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.tags li {
+  padding: 3px 10px; border-radius: 999px;
+  background: var(--surface); border: 1px solid var(--border);
+  font-size: 13px;
+}
+.recent-empty { margin: 14px 0 0; padding: 16px; color: var(--muted); text-align: center; }
+
+@media (max-width: 900px) {
+  .skills .row { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .skills dt { width: auto; }
+}

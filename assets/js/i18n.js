@@ -58,7 +58,19 @@ window.TRANSLATIONS = Object.freeze({
     "recent_posts": "Son yazılar",
     "k53u_note": "Taş devrinden kalma bir bilgisayar.",
     "dev_disclaimer": "Yaptıklarınızdan siz sorumlusunuz. Cihazınız bozulursa sorumluluk kabul etmiyorum.",
-    "j7_xda": "XDA'da bu cihaz için bir sürü ROM var."
+    "j7_xda": "XDA'da bu cihaz için bir sürü ROM var.",
+    "sk_title": "Yetenekler",
+    "sk_os": "İşletim sistemi",
+    "sk_linux": "Linux (5 yıldan fazla deneyim)",
+    "sk_prog": "Programlama dilleri",
+    "sk_web": "Web",
+    "sk_mobile": "Mobil ve donanım",
+    "sk_design": "Tasarım",
+    "sk_graphics": "Grafik ve canlandırma",
+    "sk_3d": "3D tasarım",
+    "sk_other": "Diğer",
+    "sk_ai": "Yapay zekâ",
+    "sk_office": "Ofis programları"
   },
   "en": {
     "nav_blog": "Articles",
@@ -118,7 +130,19 @@ window.TRANSLATIONS = Object.freeze({
     "recent_posts": "Recent articles",
     "k53u_note": "A computer from the Stone Age.",
     "dev_disclaimer": "You are responsible for what you do. I take no responsibility if your device breaks.",
-    "j7_xda": "There are lots of ROMs for this device on XDA."
+    "j7_xda": "There are lots of ROMs for this device on XDA.",
+    "sk_title": "Skills",
+    "sk_os": "Operating system",
+    "sk_linux": "Linux (5+ years of experience)",
+    "sk_prog": "Programming languages",
+    "sk_web": "Web",
+    "sk_mobile": "Mobile and hardware",
+    "sk_design": "Design",
+    "sk_graphics": "Graphics and animation",
+    "sk_3d": "3D design",
+    "sk_other": "Other",
+    "sk_ai": "Artificial intelligence",
+    "sk_office": "Office software"
   },
   "ar": {
     "nav_blog": "المقالات",
@@ -178,7 +202,19 @@ window.TRANSLATIONS = Object.freeze({
     "recent_posts": "أحدث المقالات",
     "k53u_note": "حاسوب من العصر الحجري.",
     "dev_disclaimer": "أنت مسؤول عما تفعله. لا أتحمل أي مسؤولية إذا تعطل جهازك.",
-    "j7_xda": "يوجد الكثير من الرومات لهذا الجهاز على XDA."
+    "j7_xda": "يوجد الكثير من الرومات لهذا الجهاز على XDA.",
+    "sk_title": "المهارات",
+    "sk_os": "نظام التشغيل",
+    "sk_linux": "لينكس (أكثر من 5 سنوات من الخبرة)",
+    "sk_prog": "لغات البرمجة",
+    "sk_web": "الويب",
+    "sk_mobile": "الجوال والعتاد",
+    "sk_design": "التصميم",
+    "sk_graphics": "الرسوميات والتحريك",
+    "sk_3d": "التصميم ثلاثي الأبعاد",
+    "sk_other": "أخرى",
+    "sk_ai": "الذكاء الاصطناعي",
+    "sk_office": "برامج المكتب"
   },
   "es": {
     "nav_blog": "Artículos",
@@ -238,7 +274,19 @@ window.TRANSLATIONS = Object.freeze({
     "recent_posts": "Artículos recientes",
     "k53u_note": "Un ordenador de la Edad de Piedra.",
     "dev_disclaimer": "Eres responsable de lo que hagas. No me hago responsable si tu dispositivo se estropea.",
-    "j7_xda": "Hay un montón de ROM para este dispositivo en XDA."
+    "j7_xda": "Hay un montón de ROM para este dispositivo en XDA.",
+    "sk_title": "Habilidades",
+    "sk_os": "Sistema operativo",
+    "sk_linux": "Linux (más de 5 años de experiencia)",
+    "sk_prog": "Lenguajes de programación",
+    "sk_web": "Web",
+    "sk_mobile": "Móvil y hardware",
+    "sk_design": "Diseño",
+    "sk_graphics": "Gráficos y animación",
+    "sk_3d": "Diseño 3D",
+    "sk_other": "Otros",
+    "sk_ai": "Inteligencia artificial",
+    "sk_office": "Programas de ofimática"
   },
   "it": {
     "nav_blog": "Articoli",
@@ -298,7 +346,19 @@ window.TRANSLATIONS = Object.freeze({
     "recent_posts": "Articoli recenti",
     "k53u_note": "Un computer dell'età della pietra.",
     "dev_disclaimer": "Sei responsabile di ciò che fai. Non mi assumo alcuna responsabilità se il tuo dispositivo si rompe.",
-    "j7_xda": "Su XDA ci sono tantissime ROM per questo dispositivo."
+    "j7_xda": "Su XDA ci sono tantissime ROM per questo dispositivo.",
+    "sk_title": "Competenze",
+    "sk_os": "Sistema operativo",
+    "sk_linux": "Linux (oltre 5 anni di esperienza)",
+    "sk_prog": "Linguaggi di programmazione",
+    "sk_web": "Web",
+    "sk_mobile": "Mobile e hardware",
+    "sk_design": "Design",
+    "sk_graphics": "Grafica e animazione",
+    "sk_3d": "Design 3D",
+    "sk_other": "Altro",
+    "sk_ai": "Intelligenza artificiale",
+    "sk_office": "Programmi per l'ufficio"
   },
   "fr": {
     "nav_blog": "Articles",
@@ -358,6 +418,18 @@ window.TRANSLATIONS = Object.freeze({
     "recent_posts": "Articles récents",
     "k53u_note": "Un ordinateur de l'âge de pierre.",
     "dev_disclaimer": "Vous êtes responsable de ce que vous faites. Je décline toute responsabilité si votre appareil est endommagé.",
-    "j7_xda": "Il existe de nombreuses ROM pour cet appareil sur XDA."
+    "j7_xda": "Il existe de nombreuses ROM pour cet appareil sur XDA.",
+    "sk_title": "Compétences",
+    "sk_os": "Système d'exploitation",
+    "sk_linux": "Linux (plus de 5 ans d'expérience)",
+    "sk_prog": "Langages de programmation",
+    "sk_web": "Web",
+    "sk_mobile": "Mobile et matériel",
+    "sk_design": "Design",
+    "sk_graphics": "Graphisme et animation",
+    "sk_3d": "Conception 3D",
+    "sk_other": "Autres",
+    "sk_ai": "Intelligence artificielle",
+    "sk_office": "Logiciels de bureautique"
   }
 });
