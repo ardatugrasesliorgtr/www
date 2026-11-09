@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<a class="back" href="../yazilar.html"><svg class="chev-side" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 6-6 6 6 6"/></svg><span data-i18n="nav_blog">Yazılar</span></a>
+<article class="post" lang="tr">
+  <header class="post-head">
+    <h1>{{ page.title | escape }}</h1>
+    <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d.%m.%Y' }}</time>
+  </header>
+  <div class="prose">
+{{ content }}
+  </div>
+</article>

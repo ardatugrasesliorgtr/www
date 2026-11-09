@@ -1,0 +1,24 @@
+title: Arda Tuğra Sesli
+lang: tr
+description: >-
+  Açık kaynak, Linux ve mahremiyet gibi konularda içerikler üreterek dijital
+  teknolojiyi bilinçli kullanmanız için çabalayan biriyim.
+timezone: Europe/Istanbul
+markdown: kramdown
+permalink: /yazilar/:title.html
+exclude:
+  - README.md
+
+defaults:
+  - scope:
+      path: "cihazlarim"
+    values:
+      root: "../"
+      nav: cihazlarim
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      root: "../"
+      nav: yazilar
