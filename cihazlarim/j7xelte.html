@@ -1,650 +1,109 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" dir="ltr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Samsung Galaxy J7 2016 · Arda Tuğra Seslі</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Samsung Galaxy J7 2016 (j7xelte)">
+<title>Samsung Galaxy J7 2016 · Arda Tuğra Sesli</title>
 <link rel="icon" href="../profile.png" type="image/png">
-<style>
-
-:root{
-  --blue-1:#7fd4f2;
-  --blue-2:#4fb8e8;
-  --green-1:#8ff0c0;
-  --green-2:#3fcf8e;
-  --accent:#4fc6d9;
-  --accent-2:#3fcf8e;
-  --bg-base:#0b1116;
-  --surface:rgba(255,255,255,.06);
-  --surface-strong:rgba(20,28,34,.88);
-  --border:rgba(255,255,255,.12);
-  --text:#eaf2f4;
-  --text-soft:#9fb2ba;
-  --shadow:0 8px 30px rgba(0,0,0,.45);
-  --r-lg:28px;
-  --r-md:20px;
-  --r-pill:999px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  font-family:'Onest',system-ui,sans-serif;
-  color:var(--text);
-  min-height:100vh;
-  background:
-    radial-gradient(ellipse 900px 520px at 50% -8%, rgba(79,184,232,.28), transparent 60%),
-    radial-gradient(ellipse 800px 500px at 15% 105%, rgba(63,207,142,.20), transparent 55%),
-    radial-gradient(ellipse 700px 500px at 90% 90%, rgba(79,198,217,.14), transparent 55%),
-    var(--bg-base);
-  background-attachment:fixed;
-  line-height:1.5;
-  -webkit-font-smoothing:antialiased;
-}
-a{color:inherit;text-decoration:none}
-button{font-family:inherit;border:none;background:none;cursor:pointer;color:inherit}
-img{display:block;max-width:100%}
-
-/* ---------- TOP BAR ---------- */
-.topbar-wrap{
-  position:sticky;top:0;z-index:100;
-  padding:12px 14px 0;
-}
-.topbar{
-  max-width:1180px;margin:0 auto;
-  background:var(--surface);
-  border:1px solid var(--border);
-  backdrop-filter:blur(22px) saturate(160%);
-  -webkit-backdrop-filter:blur(22px) saturate(160%);
-  border-radius:var(--r-pill);
-  box-shadow:var(--shadow);
-  display:flex;align-items:center;justify-content:space-between;
-  padding:8px 10px 8px 10px;
-}
-.topbar-left{display:flex;align-items:center;gap:6px}
-
-.burger{
-  width:44px;height:44px;border-radius:var(--r-pill);
-  display:flex;align-items:center;justify-content:center;
-  flex-direction:column;gap:5px;flex-shrink:0;
-}
-.burger:hover{background:rgba(255,255,255,.1)}
-.burger span{
-  width:19px;height:2.4px;border-radius:2px;background:var(--text);
-  transition:transform .3s ease, opacity .25s ease, background .2s;
-}
-.burger.open span:nth-child(1){transform:translateY(7.4px) rotate(45deg)}
-.burger.open span:nth-child(2){opacity:0}
-.burger.open span:nth-child(3){transform:translateY(-7.4px) rotate(-45deg)}
-
-.brand{
-  font-weight:800;font-size:1.05rem;letter-spacing:.02em;
-  padding:8px 14px;border-radius:var(--r-pill);
-  background:linear-gradient(120deg,var(--accent),var(--accent-2));
-  color:#fff;
-}
-
-.desktop-nav{display:none;align-items:center;gap:2px;margin-left:6px}
-.nav-item{
-  display:flex;align-items:center;gap:8px;
-  padding:10px 16px;border-radius:var(--r-pill);
-  font-weight:600;font-size:.95rem;color:var(--text-soft);
-  transition:background .2s, color .2s;
-}
-.nav-item:hover{background:rgba(255,255,255,.1);color:var(--text)}
-.nav-item.active{border:1.5px solid var(--accent-2);background:transparent;color:var(--text)}
-.mobile-menu .nav-item.active{border:1.5px solid var(--accent-2);background:transparent;color:var(--text)}
-.nav-item svg{width:18px;height:18px;flex-shrink:0}
-
-.topbar-right{display:flex;align-items:center}
-.icon-btn{
-  width:44px;height:44px;border-radius:var(--r-pill);
-  display:flex;align-items:center;justify-content:center;
-}
-.icon-btn:hover{background:rgba(255,255,255,.1)}
-.icon-btn svg{width:20px;height:20px}
-
-/* mobile dropdown menu */
-.mobile-menu{
-  position:absolute;left:0;right:0;top:100%;
-  max-width:1180px;margin:8px auto 0;padding:0 14px;
-  opacity:0;transform:translateY(-10px);
-  pointer-events:none;
-  transition:opacity .25s ease, transform .25s ease;
-  border-radius:var(--r-lg);
-}
-.mobile-menu.open{
-  opacity:1;transform:translateY(0);
-  pointer-events:auto;
-}
-.mobile-menu-inner{
-  background:var(--surface-strong);
-  border:1px solid var(--border);
-  backdrop-filter:blur(22px);
-  border-radius:var(--r-lg);
-  box-shadow:var(--shadow);
-  padding:8px;display:flex;flex-direction:column;gap:2px;
-}
-.mobile-menu .nav-item{width:100%;justify-content:flex-start;padding:14px 16px}
-
-/* language popover */
-.lang-popover{
-  position:absolute;right:14px;top:64px;z-index:110;
-  background:var(--surface-strong);
-  border:1px solid var(--border);
-  backdrop-filter:blur(22px);
-  border-radius:var(--r-md);
-  box-shadow:var(--shadow);
-  padding:6px;display:none;flex-direction:column;min-width:150px;
-}
-.lang-popover.open{display:flex}
-.lang-popover a{
-  padding:10px 14px;border-radius:14px;font-weight:600;font-size:.92rem;
-}
-.lang-popover a:hover{background:rgba(255,255,255,.1)}
-.lang-popover a.active{color:var(--accent)}
-
-/* ---------- DONATE MODAL ---------- */
-.modal-backdrop{
-  position:fixed;inset:0;background:rgba(0,0,0,.55);
-  backdrop-filter:blur(4px);
-  display:none;align-items:center;justify-content:center;
-  z-index:200;padding:20px;
-}
-.modal-backdrop.open{display:flex}
-.modal-card{
-  background:var(--surface-strong);
-  border:1px solid var(--border);
-  border-radius:var(--r-lg);
-  box-shadow:var(--shadow);
-  max-width:380px;width:100%;
-  padding:26px 24px 20px;
-  text-align:center;
-}
-.modal-card p{font-size:.98rem;color:var(--text-soft);margin-bottom:18px}
-.modal-card .modal-title{font-weight:800;font-size:1.15rem;margin-bottom:10px}
-.modal-close{
-  background:linear-gradient(120deg,var(--accent),var(--accent-2));
-  color:#fff;font-weight:700;padding:10px 22px;border-radius:var(--r-pill);
-}
-
-/* ---------- EMPTY STATE ---------- */
-.empty-state{
-  margin-top:70px;
-  max-width:520px;margin-left:auto;margin-right:auto;
-  text-align:center;
-  background:var(--surface);
-  border:1px solid var(--border);
-  backdrop-filter:blur(22px);
-  border-radius:var(--r-lg);
-  box-shadow:var(--shadow);
-  padding:48px 30px;
-}
-.empty-icon{
-  width:64px;height:64px;margin:0 auto 20px;
-  border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  background:linear-gradient(120deg,var(--accent),var(--accent-2));
-  color:#fff;
-}
-.empty-icon svg{width:30px;height:30px}
-.empty-state h1{font-size:1.4rem;font-weight:800;margin-bottom:12px}
-.empty-state p{color:var(--text-soft);font-size:.98rem}
-
-/* ---------- HERO ---------- */
-main{max-width:1180px;margin:0 auto;padding:0 14px}
-.hero{
-  margin-top:40px;
-  display:flex;flex-direction:column;align-items:center;text-align:center;gap:26px;
-}
-.avatar{
-  width:150px;height:150px;border-radius:50%;
-  object-fit:cover;
-  border:4px solid var(--surface-strong);
-  box-shadow:var(--shadow);
-  background:linear-gradient(140deg,var(--accent),var(--accent-2));
-}
-.hero-text h1{
-  font-size:1.7rem;font-weight:800;margin-bottom:12px;
-}
-.hero-text p{
-  font-size:1.02rem;color:var(--text-soft);max-width:620px;
-}
-
-/* ---------- PROJECTS & DEVICES ---------- */
-.projects-intro{
-  max-width:640px;margin:44px auto 34px;
-  text-align:center;font-size:1rem;color:var(--text-soft);
-  padding:0 6px;
-}
-.projects-grid, .devices-grid{
-  display:grid;grid-template-columns:1fr;gap:18px;
-  max-width:1180px;margin:0 auto;
-}
-.project-card{
-  background:var(--surface);
-  border:1px solid var(--border);
-  backdrop-filter:blur(22px);
-  border-radius:var(--r-lg);
-  box-shadow:var(--shadow);
-  padding:24px 22px;
-  display:flex;flex-direction:column;gap:10px;
-}
-.project-head{display:flex;align-items:center;gap:14px}
-.project-logo{
-  width:46px;height:46px;border-radius:14px;
-  object-fit:cover;flex-shrink:0;
-  background:rgba(255,255,255,.08);
-}
-.project-head h2{font-size:1.08rem;font-weight:700}
-.project-card p{color:var(--text-soft);font-size:.95rem}
-.project-link{
-  color:var(--accent-2);font-weight:600;font-size:.9rem;
-  word-break:break-word;align-self:flex-start;
-}
-.project-link:hover{text-decoration:underline}
-
-.device-card{
-  background:var(--surface);
-  border:1px solid var(--border);
-  backdrop-filter:blur(22px);
-  border-radius:var(--r-lg);
-  box-shadow:var(--shadow);
-  padding:26px 22px;
-  display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;
-  text-decoration:none;color:inherit;
-  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-}
-.device-card:hover{
-  transform:translateY(-5px);
-  border-color:var(--accent-2);
-  box-shadow:0 0 0 1px var(--accent-2), 0 0 26px rgba(63,207,142,.35), var(--shadow);
-}
-.device-img{
-  width:96px;height:96px;object-fit:contain;
-  margin-bottom:6px;
-}
-.device-card h2{font-size:1.02rem;font-weight:700}
-.device-code{
-  font-size:.82rem;font-weight:600;color:var(--accent-2);
-}
-
-@media (min-width:700px) and (max-width:1099px){
-  .projects-grid{grid-template-columns:1fr 1fr}
-  .project-card:nth-child(3){grid-column:1 / -1;max-width:calc(50% - 9px);justify-self:center}
-}
-@media (min-width:1100px){
-  .projects-grid{grid-template-columns:1fr 1fr 1fr}
-}
-@media (min-width:700px){
-  .devices-grid{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
-}
-
-/* ---------- DEVICE DETAIL ---------- */
-.device-detail{
-  max-width:1180px;margin:44px auto 0;padding:0 14px;
-  display:flex;flex-direction:column;align-items:center;gap:26px;text-align:center;
-}
-.device-detail-img{width:170px;height:170px;object-fit:contain}
-.device-detail-info{display:flex;flex-direction:column;gap:16px;max-width:640px;width:100%}
-.device-detail h1{font-size:1.5rem;font-weight:800}
-.device-detail .device-code{display:block;margin-top:2px}
-.info-box{
-  border-radius:var(--r-md);padding:14px 18px;
-  font-size:.92rem;text-align:left;line-height:1.55;
-}
-.info-box.info{background:rgba(79,198,217,.12);border:1px solid rgba(79,198,217,.35)}
-.info-box.warning{background:rgba(230,175,60,.14);border:1px solid rgba(230,175,60,.4)}
-.device-detail p.desc{color:var(--text-soft);text-align:left;font-size:.98rem}
-.section-title{font-weight:700;font-size:1rem;text-align:left;width:100%}
-.btn-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-start;width:100%}
-.btn-link{
-  display:inline-flex;align-items:center;gap:6px;
-  padding:10px 18px;border-radius:var(--r-pill);
-  background:var(--surface);border:1px solid var(--border);
-  font-weight:600;font-size:.88rem;color:var(--text);
-  transition:border-color .2s, color .2s;
-}
-.btn-link:hover{border-color:var(--accent-2);color:var(--accent-2)}
-.btn-link.highlight{border-color:var(--accent-2);color:var(--accent-2)}
-
-.tips-list{
-  list-style:none;display:flex;flex-direction:column;gap:8px;
-  text-align:left;width:100%;
-}
-.tips-list li{
-  font-size:.95rem;color:var(--text-soft);
-  padding-left:20px;position:relative;
-}
-.tips-list li::before{
-  content:"";position:absolute;left:0;top:9px;
-  width:7px;height:7px;border-radius:50%;
-  background:var(--accent-2);
-}
-
-@media (min-width:800px){
-  .device-detail{flex-direction:row;align-items:flex-start;text-align:left;margin-top:70px}
-  .device-detail-img{width:210px;height:210px;flex-shrink:0}
-  .device-detail-info{max-width:none}
-  .info-box,.device-detail p.desc,.section-title,.btn-row{text-align:left}
-}
-
-/* ---------- FOOTER ---------- */
-.site-footer{margin-top:80px;padding:26px 14px 30px}
-.footer-inner{max-width:1180px;margin:0 auto}
-.social-row{
-  display:flex;justify-content:flex-end;flex-wrap:wrap;gap:8px;
-}
-.social-row a{
-  width:42px;height:42px;border-radius:var(--r-pill);
-  display:flex;align-items:center;justify-content:center;
-  background:var(--surface);border:1px solid var(--border);
-  transition:transform .2s, background .2s;
-}
-.social-row a:hover{transform:translateY(-2px);background:var(--surface-strong)}
-.social-row a svg{width:19px;height:19px}
-
-.footer-mid{
-  text-align:right;margin-top:14px;font-size:.85rem;color:var(--text-soft);
-}
-.footer-mid a{color:var(--accent);font-weight:600}
-.footer-mid a:hover{text-decoration:underline}
-
-.footer-bottom{
-  text-align:center;margin-top:34px;font-size:.88rem;color:var(--text-soft);
-  max-width:560px;margin-left:auto;margin-right:auto;
-}
-.footer-bottom em{display:block;margin-top:6px;font-style:italic}
-
-/* ---------- DESKTOP ---------- */
-@media (min-width:900px){
-  .burger{display:none}
-  .topbar{display:grid;grid-template-columns:1fr auto 1fr}
-  .topbar-left{justify-self:start}
-  .desktop-nav{display:flex;justify-self:center}
-  .topbar-right{justify-self:end}
-  .mobile-menu{display:none !important}
-
-  .hero{
-    flex-direction:row;text-align:left;align-items:center;
-    margin-top:70px;gap:48px;
-  }
-  .avatar{width:190px;height:190px;flex-shrink:0}
-  .hero-text h1{font-size:2.1rem}
-  .hero-text p{font-size:1.08rem}
-
-  .social-row{justify-content:flex-end}
-}
-
-/* ---------- AKICILIK VE MİKRO ETKİLEŞİMLER ---------- */
-@view-transition{
-  navigation: auto;
-}
-
-@media (prefers-reduced-motion: no-preference){
-  .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1);}
-  .reveal.in-view{opacity:1;transform:translateY(0);}
-}
-
-a:focus-visible, button:focus-visible{outline:2px solid var(--accent-2);outline-offset:3px;border-radius:8px}
-
-.topbar{transition:box-shadow .3s ease, background .3s ease}
-.topbar-wrap.scrolled .topbar{box-shadow:0 14px 38px rgba(0,0,0,.55)}
-
-.brand{transition:filter .25s ease, transform .2s ease}
-.brand:hover{filter:brightness(1.12);transform:translateY(-1px)}
-
-.nav-item{transition:background .25s ease, color .25s ease, transform .15s cubic-bezier(.34,1.56,.64,1)}
-.nav-item:active{transform:scale(.95)}
-.icon-btn,.burger{transition:background .25s ease, transform .15s cubic-bezier(.34,1.56,.64,1)}
-.icon-btn:active,.burger:active{transform:scale(.9)}
-
-.avatar{transition:transform .45s cubic-bezier(.16,1,.3,1)}
-.avatar:hover{transform:scale(1.035) rotate(-1deg)}
-
-.project-card{transition:transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s ease, border-color .35s ease}
-.project-card:hover{transform:translateY(-6px);border-color:var(--accent-2);box-shadow:0 0 0 1px var(--accent-2),0 14px 36px rgba(63,207,142,.25),var(--shadow)}
-.project-logo{transition:transform .3s ease}
-.project-card:hover .project-logo{transform:scale(1.06)}
-.device-img{transition:transform .3s ease}
-.device-card:hover .device-img{transform:scale(1.06)}
-
-.modal-card{animation:modalIn .32s cubic-bezier(.16,1,.3,1)}
-@keyframes modalIn{from{opacity:0;transform:scale(.94) translateY(10px)}to{opacity:1;transform:scale(1) translateY(0)}}
-
-.social-row a{transition:transform .25s cubic-bezier(.34,1.56,.64,1), background .25s ease}
-.social-row a:hover{transform:translateY(-3px) scale(1.05)}
-
-.projects-grid .reveal:nth-child(1),.devices-grid .reveal:nth-child(1){transition-delay:.02s}
-.projects-grid .reveal:nth-child(2),.devices-grid .reveal:nth-child(2){transition-delay:.08s}
-.projects-grid .reveal:nth-child(3),.devices-grid .reveal:nth-child(3){transition-delay:.14s}
-.projects-grid .reveal:nth-child(4),.devices-grid .reveal:nth-child(4){transition-delay:.20s}
-.projects-grid .reveal:nth-child(5),.devices-grid .reveal:nth-child(5){transition-delay:.26s}
-
-.device-detail-img{transition:transform .4s cubic-bezier(.16,1,.3,1)}
-.device-detail-img:hover{transform:scale(1.04) rotate(-1deg)}
-.btn-link{transition:border-color .2s ease, color .2s ease, transform .15s cubic-bezier(.34,1.56,.64,1), background .2s ease}
-.btn-link:hover{transform:translateY(-2px)}
-.btn-link:active{transform:scale(.96)}
-.info-box{transition:transform .25s ease, box-shadow .25s ease}
-.info-box:hover{transform:translateY(-2px)}
-.tips-list li{transition:transform .2s ease, color .2s ease}
-.tips-list li:hover{transform:translateX(3px);color:var(--text)}
-
-</style>
+<link rel="stylesheet" href="../assets/css/style.css">
+<script src="../assets/js/i18n.js" defer></script>
+<script src="../assets/js/site.js" defer></script>
 </head>
-<body data-page="cihazlarim">
-
-<header class="topbar-wrap">
-  <div class="topbar">
-    <div class="topbar-left">
-      <button class="burger" id="burgerBtn" aria-label="Menü" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <a href="../index.html" class="brand">ATS</a>
+<body>
+<a class="skip-link" href="#content" data-i18n="skip">İçeriğe geç</a>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-head">
+      <a class="brand" href="../index.html">ATS</a>
+      <button class="icon-btn close-nav" id="closeNav" type="button" aria-label="Menüyü kapat" data-i18n-label="menu_close"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16"/></svg></button>
     </div>
-    <nav class="desktop-nav">
-      <a class="nav-item" href="../blog.html" data-page="blog">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H12v16H5.5c-.8 0-1.5-.7-1.5-1.5v-13Z"/><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H12v16h6.5c.8 0 1.5-.7 1.5-1.5v-13Z"/></svg>
-        <span data-i18n="nav_blog">Blog</span>
-      </a>
-      <a class="nav-item" href="../projelerim.html" data-page="projelerim">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/></svg>
-        <span data-i18n="nav_projects">Projelerim</span>
-      </a>
-      <a class="nav-item" href="../cihazlarim.html" data-page="cihazlarim">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="12" height="9" rx="1.5"/><path d="M7 20h4"/><path d="M9 13v7"/><rect x="17" y="9" width="4.5" height="8" rx="1"/></svg>
-        <span data-i18n="nav_devices">Cihazlarım</span>
-      </a>
-      <button class="nav-item" id="donateBtnDesktop" type="button">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7.5-4.6-10-9.3C.4 8.1 2 4.5 5.6 4c2.1-.3 4 .8 6.4 3.3C14.4 4.8 16.3 3.7 18.4 4c3.6.5 5.2 4.1 3.6 7.7C19.5 16.4 12 21 12 21Z"/></svg>
-        <span data-i18n="nav_donate">Bağış</span>
-      </button>
+    <nav class="nav">
+      <a class="nav-item" href="../index.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20h14V9.5"/><path d="M10 20v-6h4v6"/></svg><span data-i18n="nav_home">Ana sayfa</span></a>
+      <a class="nav-item" href="../blog.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H12v16H5.5c-.8 0-1.5-.7-1.5-1.5v-13Z"/><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H12v16h6.5c.8 0 1.5-.7 1.5-1.5v-13Z"/></svg><span data-i18n="nav_blog">Blog</span></a>
+      <a class="nav-item" href="../projelerim.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/></svg><span data-i18n="nav_projects">Projelerim</span></a>
+      <a class="nav-item" href="../cihazlarim.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="12" height="9" rx="1.5"/><path d="M7 20h4"/><path d="M9 13v7"/><rect x="17" y="9" width="4.5" height="8" rx="1"/></svg><span data-i18n="nav_devices">Cihazlarım</span></a>
+      <button class="nav-item" id="donateBtn" type="button" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-10-9.3C.4 8.1 2 4.5 5.6 4c2.1-.3 4 .8 6.4 3.3C14.4 4.8 16.3 3.7 18.4 4c3.6.5 5.2 4.1 3.6 7.7C19.5 16.4 12 21 12 21Z"/></svg><span data-i18n="nav_donate">Bağış</span></button>
     </nav>
-    <div class="topbar-right">
-      <button class="icon-btn" id="langBtn" aria-label="Dil seç" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 3.8 6 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-6-3.8-9s1.3-6.3 3.8-9Z"/></svg>
+    <div class="account">
+      <div class="menu" id="accountMenu" hidden>
+        <div id="menuMain" role="menu">
+          <div class="menu-email">ardatugrasesli@proton.me</div>
+          <button class="menu-item" id="langOpen" type="button" role="menuitem"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 3.8 6 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-6-3.8-9s1.3-6.3 3.8-9Z"/></svg><span data-i18n="menu_lang">Dil</span><svg class="end chev-side" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></button>
+          <a class="menu-item" href="https://gitlab.com/ardatugrasesli/www" target="_blank" rel="noopener noreferrer" role="menuitem"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m8 8-4 4 4 4"/><path d="m16 8 4 4-4 4"/></svg><span data-i18n="menu_source">Kaynak kodu</span></a>
+          <hr class="menu-sep">
+          <a class="menu-item" href="mailto:ardatugrasesli@proton.me" role="menuitem"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 6.5 8 6 8-6"/></svg><span data-i18n="menu_email">E-posta</span></a>
+        </div>
+        <div id="menuLang" role="menu" hidden>
+          <button class="menu-item" id="langBack" type="button" role="menuitem"><svg class="chev-side" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 6-6 6 6 6"/></svg><span data-i18n="menu_back">Geri</span></button>
+          <hr class="menu-sep">
+          <button class="menu-item" type="button" role="menuitemradio" aria-checked="true" data-lang="tr" lang="tr">Türkçe<svg class="check" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg></button>
+          <button class="menu-item" type="button" role="menuitemradio" aria-checked="false" data-lang="en" lang="en">English<svg class="check" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg></button>
+          <button class="menu-item" type="button" role="menuitemradio" aria-checked="false" data-lang="ar" lang="ar">العربية<svg class="check" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg></button>
+          <button class="menu-item" type="button" role="menuitemradio" aria-checked="false" data-lang="es" lang="es">Español<svg class="check" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg></button>
+          <button class="menu-item" type="button" role="menuitemradio" aria-checked="false" data-lang="it" lang="it">Italiano<svg class="check" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg></button>
+          <button class="menu-item" type="button" role="menuitemradio" aria-checked="false" data-lang="fr" lang="fr">Français<svg class="check" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg></button>
+        </div>
+      </div>
+      <button class="account-btn" id="accountBtn" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="accountMenu">
+        <span class="avatar-sm" aria-hidden="true">A</span>
+        <span class="account-name">Arda</span>
+        <span class="account-sub">· ATS</span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m8 9 4-4 4 4"/><path d="m8 15 4 4 4-4"/></svg>
       </button>
     </div>
-  </div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
 
-  <div class="mobile-menu" id="mobileMenu">
-    <div class="mobile-menu-inner">
-      <a class="nav-item" href="../blog.html" data-page="blog">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H12v16H5.5c-.8 0-1.5-.7-1.5-1.5v-13Z"/><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H12v16h6.5c.8 0 1.5-.7 1.5-1.5v-13Z"/></svg>
-        <span data-i18n="nav_blog">Blog</span>
-      </a>
-      <a class="nav-item" href="../projelerim.html" data-page="projelerim">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/></svg>
-        <span data-i18n="nav_projects">Projelerim</span>
-      </a>
-      <a class="nav-item" href="../cihazlarim.html" data-page="cihazlarim">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="12" height="9" rx="1.5"/><path d="M7 20h4"/><path d="M9 13v7"/><rect x="17" y="9" width="4.5" height="8" rx="1"/></svg>
-        <span data-i18n="nav_devices">Cihazlarım</span>
-      </a>
-      <button class="nav-item" id="donateBtnMobile" type="button">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7.5-4.6-10-9.3C.4 8.1 2 4.5 5.6 4c2.1-.3 4 .8 6.4 3.3C14.4 4.8 16.3 3.7 18.4 4c3.6.5 5.2 4.1 3.6 7.7C19.5 16.4 12 21 12 21Z"/></svg>
-        <span data-i18n="nav_donate">Bağış</span>
-      </button>
-    </div>
-  </div>
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn burger" id="burger" type="button" aria-label="Menüyü aç" data-i18n-label="menu_open" aria-controls="sidebar" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <div class="crumbs"><a href="../cihazlarim.html" data-i18n="nav_devices">Cihazlarım</a><span aria-hidden="true">/</span><span>Samsung Galaxy J7 2016</span></div>
+    </header>
 
-  <div class="lang-popover" id="langPopover">
-    <a href="#" class="lang-btn" data-lang="tr">Türkçe</a>
-    <a href="#" class="lang-btn" data-lang="en">English</a>
-    <a href="#" class="lang-btn" data-lang="ar">العربية</a>
-    <a href="#" class="lang-btn" data-lang="es">Español</a>
-    <a href="#" class="lang-btn" data-lang="it">Italiano</a>
-    <a href="#" class="lang-btn" data-lang="fr">Français</a>
-  </div>
-</header>
+    <main class="content" id="content">
+      <section class="detail">
+        <img class="detail-img" src="j7xelte.webp" alt="Samsung Galaxy J7 2016">
+        <div class="detail-info">
+          <div>
+            <h1>Samsung Galaxy J7 2016</h1>
+            <span class="code"><span data-i18n="dev_code_prefix">Kod adı:</span> j7xelte</span>
+          </div>
+          <div class="note info" data-i18n="j7_info">Cihaz en fazla Android 16 çalıştırabilir.</div>
+          <p data-i18n="j7_desc">Bu cihaz için birçok ROM var, ama en iyi çalışanlar Android 11&#x27;e kadar. Bunun üzerindekiler de çalışır, ancak hatalar olacaktır.</p>
+          <h2 class="section-title" data-i18n="j7_rec_title">Kurtarma (Recovery)</h2>
+          <div class="chips"><a class="chip" href="https://sourceforge.net/projects/batuhan-s-builds/files/TWRP-3.7.1-Exynos7870-Stable/TWRP-3.7.1-j7xelte-%40Batuhantrkgl.img/download" target="_blank" rel="noopener noreferrer"><span>TWRP</span></a><a class="chip" href="https://orangefox.download/device/5f28698cc44ec167dc132558" target="_blank" rel="noopener noreferrer"><span>OFRP</span></a></div>
+          <h2 class="section-title" data-i18n="j7_rom_title">ROM&#x27;lar</h2>
+          <div class="chips"><a class="chip primary" href="https://crdroid.net/j7xelte/6" target="_blank" rel="noopener noreferrer"><span data-i18n="j7_rom_cr">Resmî crDroid (Önerilir)</span></a><a class="chip" href="https://xdaforums.com/t/rom-unofficial-16-voltageos-5-3-for-j7-2016-j7xelte.4788902/" target="_blank" rel="noopener noreferrer"><span>Android 16</span></a><a class="chip" href="https://osyesus.blogspot.com/2026/06/onir-v9-oneui-8-para-j7-2016-neo-pro.html" target="_blank" rel="noopener noreferrer"><span>One UI 8.x</span></a></div>
+        </div>
+      </section>
+    </main>
 
-<div class="modal-backdrop" id="donateModal">
-  <div class="modal-card">
-    <div class="modal-title" data-i18n="donate_title">Bağış</div>
-    <p data-i18n="donate_text">Benim ihtiyacım yok, ama başkalarının var.</p>
-    <button class="modal-close" id="closeDonate" data-i18n="donate_close">Kapat</button>
+    <footer class="composer-wrap">
+      <div class="composer">
+        <p data-i18n="quran_text">Biz sizi Allah rızası için doyuruyoruz; sizden ne bir karşılık ne de bir teşekkür bekliyoruz.</p>
+        <cite data-i18n="quran_ref">Kur&#x27;an 76:9</cite>
+      </div>
+      <div class="socials">
+      <a class="social" href="https://instagram.com/ardatugrasesli" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1"/></svg><span>Instagram</span></a>
+      <a class="social" href="https://nsosyal.com/ardatugrasesli" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 18V6l10 12V6"/></svg><span>N Sosyal</span></a>
+      <a class="social" href="https://youtube.com/@ardatugrasesli" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="6" width="19" height="12" rx="4"/><path d="m10.5 9.5 5 2.5-5 2.5v-5Z"/></svg><span>YouTube</span></a>
+      <a class="social" href="https://github.com/ardatugrasesliorgtr" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg><span>GitHub</span></a>
+      <a class="social" href="https://gitlab.com/ardatugrasesli" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21 3.5 13.5 5.7 6l2.4 5.5h8l2.4-5.5 2.2 7.5L12 21Z"/></svg><span>GitLab</span></a>
+      </div>
+    </footer>
   </div>
 </div>
 
-<main>
-
-  <section class="device-detail">
-    <img src="j7xelte.webp" alt="Samsung Galaxy J7 2016" class="device-detail-img">
-    <div class="device-detail-info">
-      <div>
-        <h1>Samsung Galaxy J7 2016</h1>
-        <span class="device-code"><span data-i18n="dev_code_prefix">Kod adı:</span> j7xelte</span>
-      </div>
-      <div class="info-box info" data-i18n="j7_info">Cihaz en fazla Android 16 çalıştırabilir.</div>
-      <p class="desc" data-i18n="j7_desc">Bu cihaz için birçok ROM var, ama en iyi çalışanlar Android 11'e kadar. Bunun üzerindekiler de çalışır, ancak hatalar olacaktır.</p>
-
-      <div class="section-title" data-i18n="j7_rec_title">Kurtarma (Recovery)</div>
-      <div class="btn-row">
-        <a class="btn-link" href="https://sourceforge.net/projects/batuhan-s-builds/files/TWRP-3.7.1-Exynos7870-Stable/TWRP-3.7.1-j7xelte-%40Batuhantrkgl.img/download" target="_blank" rel="noopener">TWRP</a>
-        <a class="btn-link" href="https://orangefox.download/device/5f28698cc44ec167dc132558" target="_blank" rel="noopener">OFRP</a>
-      </div>
-
-      <div class="section-title" data-i18n="j7_rom_title">ROM'lar</div>
-      <div class="btn-row">
-        <a class="btn-link" href="https://crdroid.net/j7xelte/6" target="_blank" rel="noopener" data-i18n="j7_rom_cr">Resmî crDroid (Önerilir)</a>
-        <a class="btn-link" href="https://xdaforums.com/t/rom-unofficial-16-voltageos-5-3-for-j7-2016-j7xelte.4788902/" target="_blank" rel="noopener">Android 16</a>
-        <a class="btn-link" href="https://osyesus.blogspot.com/2026/06/onir-v9-oneui-8-para-j7-2016-neo-pro.html" target="_blank" rel="noopener">One UI 8.x</a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="social-row">
-      <a href="https://instagram.com/ardatugrasesli" target="_blank" rel="noopener" aria-label="Instagram">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1"/></svg>
-      </a>
-      <a href="https://nsosyal.com/ardatugrasesli" target="_blank" rel="noopener" aria-label="N Sosyal" style="font-weight:800;font-size:.95rem;">N</a>
-      <a href="https://youtube.com/@ardatugrasesli" target="_blank" rel="noopener" aria-label="YouTube">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="6" width="19" height="12" rx="4"/><path d="M10.5 9.5l5 2.5-5 2.5v-5Z" fill="currentColor" stroke="none"/></svg>
-      </a>
-      <a href="https://github.com/ardatugrasesliorgtr" target="_blank" rel="noopener" aria-label="GitHub">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.3-3.4-1.3-.4-1.1-1-1.4-1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.2-4.5-1.1-4.5-4.9 0-1.1.4-2 1-2.6-.1-.2-.4-1.2.1-2.6 0 0 .8-.3 2.7 1 .8-.2 1.6-.3 2.5-.3.8 0 1.7.1 2.5.3 1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.6.6.6 1 1.5 1 2.6 0 3.8-2.3 4.6-4.5 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>
-      </a>
-      <a href="https://gitlab.com/ardatugrasesli" target="_blank" rel="noopener" aria-label="GitLab">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21 3.5 13.5 5.7 6l2.4 5.5h8l2.4-5.5 2.2 7.5L12 21Z"/></svg>
-      </a>
-      <a href="mailto:ardatugrasesli@proton.me" aria-label="E-posta">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 6.5 8 6 8-6"/></svg>
-      </a>
-    </div>
-
-    <div class="footer-mid" data-i18n="footer_code">
-      Web sitesinin kaynak kodu <a href="https://gitlab.com/ardatugrasesli/www" target="_blank" rel="noopener">burada</a> mevcuttur.
-    </div>
-
-    <div class="footer-bottom" data-i18n="footer_quran">
-      Biz sizi Allah rızası için doyuruyoruz; sizden ne bir karşılık ne de bir teşekkür bekliyoruz. <em>Kur'an 76:9</em>
-    </div>
+<dialog id="donateDialog" aria-labelledby="donateTitle">
+  <div class="dialog-inner">
+    <h2 id="donateTitle" data-i18n="donate_title">Bağış</h2>
+    <p data-i18n="donate_text">Benim ihtiyacım yok, ama başkalarının var.</p>
+    <button class="btn" id="donateClose" type="button" data-i18n="donate_close">Kapat</button>
   </div>
-</footer>
-
-<script>
-const burgerBtn = document.getElementById('burgerBtn');
-const mobileMenu = document.getElementById('mobileMenu');
-const langBtn = document.getElementById('langBtn');
-const langPopover = document.getElementById('langPopover');
-const donateModal = document.getElementById('donateModal');
-
-function closeMenu(){
-  burgerBtn.classList.remove('open');
-  burgerBtn.setAttribute('aria-expanded','false');
-  mobileMenu.classList.remove('open');
-}
-function closeLang(){
-  langBtn.setAttribute('aria-expanded','false');
-  langPopover.classList.remove('open');
-}
-
-burgerBtn.addEventListener('click', e=>{
-  e.stopPropagation();
-  const isOpen = burgerBtn.classList.toggle('open');
-  burgerBtn.setAttribute('aria-expanded', isOpen);
-  mobileMenu.classList.toggle('open', isOpen);
-  closeLang();
-});
-
-langBtn.addEventListener('click', e=>{
-  e.stopPropagation();
-  const isOpen = langPopover.classList.toggle('open');
-  langBtn.setAttribute('aria-expanded', isOpen);
-  closeMenu();
-});
-
-['donateBtnDesktop','donateBtnMobile'].forEach(id=>{
-  document.getElementById(id).addEventListener('click', e=>{
-    e.stopPropagation();
-    donateModal.classList.add('open');
-    closeMenu();
-    closeLang();
-  });
-});
-document.getElementById('closeDonate').addEventListener('click', ()=> donateModal.classList.remove('open'));
-donateModal.addEventListener('click', e=>{ if(e.target === donateModal) donateModal.classList.remove('open'); });
-
-const currentPage = document.body.dataset.page || '';
-document.querySelectorAll('.nav-item[data-page]').forEach(el=>{
-  if(el.dataset.page === currentPage) el.classList.add('active');
-});
-
-document.addEventListener('click', ()=>{
-  closeMenu();
-  closeLang();
-});
-mobileMenu.addEventListener('click', e=> e.stopPropagation());
-langPopover.addEventListener('click', e=> e.stopPropagation());
-
-const revealEls = document.querySelectorAll('.hero-text, .avatar, .project-card, .device-card, .empty-state, .projects-intro, .device-detail-img, .device-detail-info');
-revealEls.forEach(el => el.classList.add('reveal'));
-if('IntersectionObserver' in window){
-  const io = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-      if(entry.isIntersecting){
-        entry.target.classList.add('in-view');
-        io.unobserve(entry.target);
-      }
-    });
-  }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
-  revealEls.forEach(el => io.observe(el));
-} else {
-  revealEls.forEach(el => el.classList.add('in-view'));
-}
-
-const topbarWrap = document.querySelector('.topbar-wrap');
-window.addEventListener('scroll', ()=>{
-  topbarWrap.classList.toggle('scrolled', window.scrollY > 8);
-}, {passive:true});
-</script>
-<script src="../js/i18n.js"></script>
+</dialog>
 </body>
 </html>

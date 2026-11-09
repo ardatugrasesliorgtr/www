@@ -1,4 +1,5 @@
-const translations = {
+/* Türkçe başvuru dilidir. Diğer diller yapay zekâ ile çevrilmiştir. */
+window.TRANSLATIONS = Object.freeze({
   "tr": {
     "nav_blog": "Blog",
     "nav_projects": "Projelerim",
@@ -17,8 +18,6 @@ const translations = {
     "proj_yt_desc": "Dijital teknoloji hakkında içerikler üretmeye çalışıyorum.",
     "dev_intro": "Bu sayfada zamanla elimden geçen cihazlar ve onlarla yaptığım custom ROM, root, gibi denemeler hakkında bilgiler var.",
     "dev_code_prefix": "Kod adı:",
-    "footer_code": "Web sitesinin kaynak kodu <a href='https://gitlab.com/ardatugrasesli/www' target='_blank' rel='noopener'>burada</a> mevcuttur.",
-    "footer_quran": "Biz sizi Allah rızası için doyuruyoruz; sizden ne bir karşılık ne de bir teşekkür bekliyoruz. <em>Kur'an 76:9</em>",
     "a26x_warn": "Bu cihazda One UI 8 ön yükleyicisini (bootloader) açmanın hiçbir yolu yok; ne olur bulun.",
     "a26x_desc": "Ayrıca resmî TWRP desteği mevcut.",
     "gto_info": "Bu cihaz en fazla Android 16 çalıştırabilir.",
@@ -42,7 +41,17 @@ const translations = {
     "k53u_desc": "Pek söyleyecek bir şeyim yok, birkaç öneri yeterli:",
     "k53u_tip1": "En az 6 GB DDR3 RAM alın.",
     "k53u_tip2": "Mümkünse SSD alın.",
-    "k53u_tip3": "XFCE içeren bir GNU/Linux dağıtımı kullanın."
+    "k53u_tip3": "XFCE içeren bir GNU/Linux dağıtımı kullanın.",
+    "quran_text": "Biz sizi Allah rızası için doyuruyoruz; sizden ne bir karşılık ne de bir teşekkür bekliyoruz.",
+    "quran_ref": "Kur'an 76:9",
+    "nav_home": "Ana sayfa",
+    "menu_lang": "Dil",
+    "menu_source": "Kaynak kodu",
+    "menu_back": "Geri",
+    "menu_open": "Menüyü aç",
+    "menu_close": "Menüyü kapat",
+    "skip": "İçeriğe geç",
+    "menu_email": "E-posta"
   },
   "en": {
     "nav_blog": "Blog",
@@ -62,8 +71,6 @@ const translations = {
     "proj_yt_desc": "I try to create content about digital technology.",
     "dev_intro": "On this page, you'll find info about devices I've had over time and my custom ROM, root, and bootloader experiments with them.",
     "dev_code_prefix": "Codename:",
-    "footer_code": "The website's source code is available <a href='https://gitlab.com/ardatugrasesli/www' target='_blank' rel='noopener'>here</a>.",
-    "footer_quran": "We feed you only for the countenance of Allah. We wish not from you reward or gratitude. <em>Quran 76:9</em>",
     "a26x_warn": "There is no way to unlock the One UI 8 bootloader on this device. Please, find one.",
     "a26x_desc": "Official TWRP support is also available.",
     "gto_info": "This device can run up to Android 16.",
@@ -87,7 +94,17 @@ const translations = {
     "k53u_desc": "Not much to say, a few tips are enough:",
     "k53u_tip1": "Get at least 6 GB DDR3 RAM.",
     "k53u_tip2": "Get an SSD if possible.",
-    "k53u_tip3": "Use a GNU/Linux distribution with XFCE."
+    "k53u_tip3": "Use a GNU/Linux distribution with XFCE.",
+    "quran_text": "We feed you only for the countenance of Allah. We wish not from you reward or gratitude.",
+    "quran_ref": "Quran 76:9",
+    "nav_home": "Home",
+    "menu_lang": "Language",
+    "menu_source": "Source code",
+    "menu_back": "Back",
+    "menu_open": "Open menu",
+    "menu_close": "Close menu",
+    "skip": "Skip to content",
+    "menu_email": "Email"
   },
   "ar": {
     "nav_blog": "المدونة",
@@ -107,8 +124,6 @@ const translations = {
     "proj_yt_desc": "أحاول إنشاء محتوى حول التكنولوجيا الرقمية.",
     "dev_intro": "ستجد في هذه الصفحة معلومات عن الأجهزة التي امتلكتها بمرور الوقت وتجاربي مع الرومات المخصصة والروت والبوت لودر.",
     "dev_code_prefix": "الاسم الرمزي:",
-    "footer_code": "الكود المصدري للموقع متاح <a href='https://gitlab.com/ardatugrasesli/www' target='_blank' rel='noopener'>هنا</a>.",
-    "footer_quran": "إِنَّمَا نُطْعِمُكُمْ لِوَجْهِ اللَّهِ لَا نُرِيدُ مِنكُمْ جَزَاءً وَلَا شُكُورًا <em>القرآن 76:9</em>",
     "a26x_warn": "لا توجد طريقة لفتح البوت لودر (One UI 8) في هذا الجهاز. أرجوكم، جدوا طريقة.",
     "a26x_desc": "يوجد أيضاً دعم رسمي لـ TWRP.",
     "gto_info": "يمكن لهذا الجهاز تشغيل أندرويد 16 كحد أقصى.",
@@ -132,7 +147,17 @@ const translations = {
     "k53u_desc": "ليس لدي الكثير لأقوله، بضع نصائح تكفي:",
     "k53u_tip1": "احصل على ذاكرة وصول عشوائي (RAM) بسعة 6 جيجابايت DDR3 على الأقل.",
     "k53u_tip2": "احصل على SSD إن أمكن.",
-    "k53u_tip3": "استخدم توزيعة GNU/Linux مع واجهة XFCE."
+    "k53u_tip3": "استخدم توزيعة GNU/Linux مع واجهة XFCE.",
+    "quran_text": "إِنَّمَا نُطْعِمُكُمْ لِوَجْهِ اللَّهِ لَا نُرِيدُ مِنكُمْ جَزَاءً وَلَا شُكُورًا",
+    "quran_ref": "القرآن 76:9",
+    "nav_home": "الرئيسية",
+    "menu_lang": "اللغة",
+    "menu_source": "الشيفرة المصدرية",
+    "menu_back": "رجوع",
+    "menu_open": "فتح القائمة",
+    "menu_close": "إغلاق القائمة",
+    "skip": "انتقل إلى المحتوى",
+    "menu_email": "البريد الإلكتروني"
   },
   "es": {
     "nav_blog": "Blog",
@@ -152,8 +177,6 @@ const translations = {
     "proj_yt_desc": "Intento crear contenido sobre tecnología digital.",
     "dev_intro": "En esta página encontrarás información sobre dispositivos que he tenido y mis experimentos con ROMs, root y bootloaders.",
     "dev_code_prefix": "Nombre en clave:",
-    "footer_code": "El código fuente del sitio web está disponible <a href='https://gitlab.com/ardatugrasesli/www' target='_blank' rel='noopener'>aquí</a>.",
-    "footer_quran": "Os alimentamos por el rostro de Dios; no queremos de vosotros recompensa ni gratitud. <em>Corán 76:9</em>",
     "a26x_warn": "No hay forma de desbloquear el bootloader de One UI 8 en este dispositivo. Por favor, encuentren una.",
     "a26x_desc": "También hay soporte oficial de TWRP disponible.",
     "gto_info": "Este dispositivo puede ejecutar hasta Android 16.",
@@ -177,7 +200,17 @@ const translations = {
     "k53u_desc": "No hay mucho que decir, un par de consejos bastan:",
     "k53u_tip1": "Consigue al menos 6 GB de RAM DDR3.",
     "k53u_tip2": "Consigue un SSD si es posible.",
-    "k53u_tip3": "Usa una distribución GNU/Linux con XFCE."
+    "k53u_tip3": "Usa una distribución GNU/Linux con XFCE.",
+    "quran_text": "Os alimentamos por el rostro de Dios; no queremos de vosotros recompensa ni gratitud.",
+    "quran_ref": "Corán 76:9",
+    "nav_home": "Inicio",
+    "menu_lang": "Idioma",
+    "menu_source": "Código fuente",
+    "menu_back": "Atrás",
+    "menu_open": "Abrir menú",
+    "menu_close": "Cerrar menú",
+    "skip": "Ir al contenido",
+    "menu_email": "Correo electrónico"
   },
   "it": {
     "nav_blog": "Blog",
@@ -197,8 +230,6 @@ const translations = {
     "proj_yt_desc": "Cerco di creare contenuti sulla tecnologia digitale.",
     "dev_intro": "In questa pagina troverai informazioni sui dispositivi che ho avuto e sui miei esperimenti con ROM personalizzate, root e bootloader.",
     "dev_code_prefix": "Nome in codice:",
-    "footer_code": "Il codice sorgente del sito web è disponibile <a href='https://gitlab.com/ardatugrasesli/www' target='_blank' rel='noopener'>qui</a>.",
-    "footer_quran": "Vi nutriamo solo per il volto di Dio; non vogliamo da voi ricompensa né gratitudine. <em>Corano 76:9</em>",
     "a26x_warn": "Non c'è modo di sbloccare il bootloader di One UI 8 su questo dispositivo. Vi prego, trovatene uno.",
     "a26x_desc": "È disponibile anche il supporto ufficiale TWRP.",
     "gto_info": "Questo dispositivo può eseguire fino ad Android 16.",
@@ -222,7 +253,17 @@ const translations = {
     "k53u_desc": "Non c'è molto da dire, bastano pochi consigli:",
     "k53u_tip1": "Procurati almeno 6 GB di RAM DDR3.",
     "k53u_tip2": "Prendi un SSD se possibile.",
-    "k53u_tip3": "Usa una distribuzione GNU/Linux con XFCE."
+    "k53u_tip3": "Usa una distribuzione GNU/Linux con XFCE.",
+    "quran_text": "Vi nutriamo solo per il volto di Dio; non vogliamo da voi ricompensa né gratitudine.",
+    "quran_ref": "Corano 76:9",
+    "nav_home": "Home",
+    "menu_lang": "Lingua",
+    "menu_source": "Codice sorgente",
+    "menu_back": "Indietro",
+    "menu_open": "Apri menu",
+    "menu_close": "Chiudi menu",
+    "skip": "Vai al contenuto",
+    "menu_email": "E-mail"
   },
   "fr": {
     "nav_blog": "Blog",
@@ -242,8 +283,6 @@ const translations = {
     "proj_yt_desc": "J'essaie de créer du contenu sur la technologie numérique.",
     "dev_intro": "Sur cette page, vous trouverez des informations sur les appareils que j'ai eus et mes expériences (ROM personnalisées, root, bootloader).",
     "dev_code_prefix": "Nom de code:",
-    "footer_code": "Le code source du site web est disponible <a href='https://gitlab.com/ardatugrasesli/www' target='_blank' rel='noopener'>ici</a>.",
-    "footer_quran": "C'est pour le visage d'Allah que nous vous nourrissons : nous ne voulons de vous ni récompense ni gratitude. <em>Coran 76:9</em>",
     "a26x_warn": "Il n'y a aucun moyen de déverrouiller le bootloader One UI 8 sur cet appareil. S'il vous plaît, trouvez-en un.",
     "a26x_desc": "Le support officiel de TWRP est également disponible.",
     "gto_info": "Cet appareil peut exécuter jusqu'à Android 16.",
@@ -267,56 +306,16 @@ const translations = {
     "k53u_desc": "Pas grand chose à dire, quelques conseils suffisent :",
     "k53u_tip1": "Obtenez au moins 6 Go de RAM DDR3.",
     "k53u_tip2": "Prenez un SSD si possible.",
-    "k53u_tip3": "Utilisez une distribution GNU/Linux avec XFCE."
+    "k53u_tip3": "Utilisez une distribution GNU/Linux avec XFCE.",
+    "quran_text": "C'est pour le visage d'Allah que nous vous nourrissons : nous ne voulons de vous ni récompense ni gratitude.",
+    "quran_ref": "Coran 76:9",
+    "nav_home": "Accueil",
+    "menu_lang": "Langue",
+    "menu_source": "Code source",
+    "menu_back": "Retour",
+    "menu_open": "Ouvrir le menu",
+    "menu_close": "Fermer le menu",
+    "skip": "Aller au contenu",
+    "menu_email": "E-mail"
   }
-};
-
-const supportedLangs = ['tr', 'en', 'ar', 'es', 'it', 'fr'];
-
-function getBrowserLang() {
-  const browserLang = navigator.language.split('-')[0];
-  if (supportedLangs.includes(browserLang)) {
-    return browserLang;
-  }
-  return 'en';
-}
-
-function setLanguage(lang) {
-  if (!supportedLangs.includes(lang)) lang = 'en';
-
-  localStorage.setItem('preferred_lang', lang);
-  document.documentElement.lang = lang;
-
-  document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
-
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (translations[lang] && translations[lang][key]) {
-      el.innerHTML = translations[lang][key];
-    }
-  });
-
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.classList.remove('active');
-    if(btn.getAttribute('data-lang') === lang) {
-      btn.classList.add('active');
-    }
-  });
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  const savedLang = localStorage.getItem('preferred_lang');
-  const initialLang = savedLang ? savedLang : getBrowserLang();
-
-  setLanguage(initialLang);
-
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const selectedLang = btn.getAttribute('data-lang');
-      setLanguage(selectedLang);
-      if(typeof closeLang === 'function') closeLang();
-      if(typeof closeMenu === 'function') closeMenu();
-    });
-  });
 });
